@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas e Frequência</title>
+    <link rel="stylesheet" href="./style.css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Notas e Frequência</h1>
+        <div class="input-section">
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" placeholder="Digite a primeira nota" min="0" max="10">
+            
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" placeholder="Digite a segunda nota" min="0" max="10">
+            
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" placeholder="Digite a terceira nota" min="0" max="10">
+            
+            <label for="frequencia">Frequência (%):</label>
+            <input type="number" id="frequencia" placeholder="Digite a frequência" min="0" max="100">
+            
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <div id="resultado" class="resultado">
+            <p id="media"></p>
+            <p id="situacao"></p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
