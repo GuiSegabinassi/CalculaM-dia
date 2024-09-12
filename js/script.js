@@ -17,12 +17,15 @@ function calcular() {
     
     if (media >= 7 && frequencia >= 75) {
         resultadoSituacao.textContent = "Aprovado!";
-        resultadoSituacao.style.color = "#4CAF50";  
+        resultadoSituacao.style.color = "#4CAF50";  // Verde
+    } else if (media >= 7 && frequencia < 75) {
+        resultadoSituacao.textContent = "Em exame devido à baixa frequência!";
+        resultadoSituacao.style.color = "#FFA500";  // Laranja
     } else if (frequencia < 75) {
         resultadoSituacao.textContent = "Reprovado por frequência!";
-        resultadoSituacao.style.color = "#E74C3C";  
+        resultadoSituacao.style.color = "#E74C3C";  // Vermelho
     } else {
         resultadoSituacao.textContent = "Reprovado por média!";
-        resultadoSituacao.style.color = "#E74C3C";  
+        resultadoSituacao.style.color = "#E74C3C";  // Vermelho
     }
 }
